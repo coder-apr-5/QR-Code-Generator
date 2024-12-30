@@ -2,7 +2,7 @@
     --primary-color:#000000;
     --border-radius:8px;
     --secondary-color:#fff;
-    --border-color:#7fb7c9;
+    --border-color:#ffffff;
 }
 *{
     margin: 0;
@@ -59,7 +59,7 @@ body{
     margin-inline:2px;
     color: var(--primary-color);
     font-weight: 600;
-    border-radius: var(--border-radius);
+    border-radius: 10px solid white;
 }
 .qr-body{
     display: grid;
@@ -70,9 +70,15 @@ body{
     max-width: 100%;
     max-height: 100%;
     margin-block: 10px;
-    padding: 20px;
-    border: 0.5px solid var(--border-radius);
+    padding: 0px;
+    border: 10px solid white;
 }
+.qr-code {
+    border: 10px solid white; /* Creates the white border */
+    display: inline-block;    /* Ensures proper spacing */
+    padding: 5px;             /* Optional: adds spacing around the border */
+    background-color: white;  /* Ensures a consistent background */
+  }
 @media screen and (max-width:520px){
     .box{
         width: 80%;
